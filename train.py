@@ -1,7 +1,11 @@
 from ultralytics import YOLO
 
-# Load the base model
+# load model awal
 model = YOLO('yolov8n.pt')
 
-# Train it on your custom dataset
-model.train(data='path/to/your/dataset.yaml', epochs=50, imgsz=640)
+# training
+model.train(
+    data='dataset/data.yaml',
+    epochs=50,
+    imgsz=640
+)

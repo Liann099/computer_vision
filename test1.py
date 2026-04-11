@@ -18,7 +18,7 @@ class ComputerVisionApp(ctk.CTk):
 
         # Load the pre-trained YOLOv8 Nano model (downloads automatically the first time)
         # To use your own trained model in the future, change this to: YOLO('runs/detect/train/weights/best.pt')
-        self.model = YOLO('yolov8n.pt') 
+        self.model = YOLO(r'C:\Users\Ivan\runs\detect\train3\weights\best.pt') 
 
         # UI Layout
         self.setup_ui()
